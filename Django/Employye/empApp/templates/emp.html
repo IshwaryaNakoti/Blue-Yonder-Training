@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee</title>
+</head>
+<body>
+    <!-- empdata = {'empNo' : 101, 'empName' : "Smith", "empSal" : 3000}
+    return render(request, 'emp.html', {"empdata" : empdata}) -->
+    <!-- <h1>Employee Details</h1>
+    <p>Emp no : {{empdata.empNo}}</p>
+    <p>Emp Name : {{empdata.empName}}</p>
+    <p>Emp Salary : {{empdata.empSal}}</p>
+
+    empdata2 = {'empno' : 202, 'empName':"Saraswathi"}
+    return render(request, 'emp.html', {"empdata" : empdata}, context=empdata2) -->
+    <!-- <h2>Employee details 2</h2>
+    <p>Emp no : {{empdata2.empno}}</p>
+    <p>Emp Name : {{empdata2.empname}}</p> --> 
+    {% for emp in empData %}
+        <p>Emp no : {{emp.empNo}}</p>
+        <p>Emp Name : {{emp.empName}}</p>
+        <p>Emp Salary : {{emp.empSal}}</p>
+        <p>------------------------------------------</p>
+    {% endfor %}
+
+</body>
+</html>

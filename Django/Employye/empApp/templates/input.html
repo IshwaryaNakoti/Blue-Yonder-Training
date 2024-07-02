@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student</title>
+</head>
+<body>
+    <h1>Student info</h1>
+    <div>
+        <form method="post">
+            {{ form.as_p }}
+            {% csrf_token %} 
+            <!--For web security purpose, 
+            if not mentioned forbidden error will be generated due to cross site request forgery protection-->
+            <input type="submit" id="Submit">
+
+        </form>
+    </div>
+
+</body>
+</html>
