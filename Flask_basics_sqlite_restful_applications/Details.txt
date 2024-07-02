@@ -1,0 +1,4 @@
+1. Venv is created
+2. employee department application - crud operation 
+3. flask restful application is attached
+4. sqlalchemy application
