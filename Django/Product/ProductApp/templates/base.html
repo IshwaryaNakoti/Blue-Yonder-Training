@@ -1,0 +1,51 @@
+<!-- APPLICATION 1
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parent</title>
+</head>
+<body>
+    common code required for every child template 
+{% block child_block%} 
+<br>
+Anything outside of this block available to child tag. 
+in child template the specific code should be in this block 
+{%endblock%}
+</body>
+</html> -->
+
+<!DOCTYPE html> 
+{% load custom_filters %}
+{%load static %} 
+<html lang="en" dir="ltr"> 
+<head> 
+<meta charset="utf-8"> 
+<title></title> 
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+<link rel="stylesheet" href="{% static 'css/advtempot.css'%}"> 
+{% block xyz %}{% endblock %} 
+</head> 
+<body> 
+<nav class="navbar navbar-default navbar-inverse"> 
+<div class="container"> 
+<!-- Brand and toggle get grouped for better mobile display --> 
+<div class="navbar-header"> 
+<a class="navbar-brand" href="/">RAJ NEWS</a> 
+</div> 
+<ul class="nav navbar-nav"> 
+<li><a href="/">Home</a></li> 
+<li><a href="/movies">Movies</a></li> 
+<li><a href="/sports">Sports</a></li> 
+<li><a href="/politics">Politics</a></li> 
+</ul> 
+</div><!-- /.container-fluid --> 
+</nav> 
+{% block body_bl %} 
+Name : {{name|upper}} <br>
+Name with custom filter : {{name|f3upper|l3upper}}
+{% endblock %} 
+</body> 
+</html> 

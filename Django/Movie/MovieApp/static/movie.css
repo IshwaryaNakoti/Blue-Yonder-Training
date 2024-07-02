@@ -1,0 +1,39 @@
+body { 
+    background: url('https://example.com/your-image.jpg') no-repeat center center fixed; 
+    background-size: cover;
+    font-family: 'Merriweather', serif;
+} 
+
+.container .jumbotron { 
+    margin-top: 200px; 
+    background: rgba(231, 224, 212, 0.9); 
+    color: rgb(63, 42, 42); 
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+} 
+
+table, tr, thead, th { 
+    border: 2px solid white; 
+    font-size: 50px; 
+    color: rgb(221, 217, 217); 
+    background: rgb(189, 168, 168); 
+    margin: auto; 
+    border-collapse: collapse;
+    text-align: center;
+} 
+
+thead, th, td { 
+    border: 1px solid rgb(218, 189, 189); 
+    font-size: 25px; 
+    color: rgb(1, 1, 17); 
+    background: rgb(238, 233, 230); 
+    padding: 10px;
+} 
+
+h1 { 
+    text-align: center; 
+    font-size: 3em;
+    color: rgb(238, 233, 230);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+} 
