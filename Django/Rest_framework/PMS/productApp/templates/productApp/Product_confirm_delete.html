@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delete Product</title>
+</head>
+<body>
+    <h1>Delete Product : </h1>
+    <h3><li>Product Name  : {{product.p_name}}</li></h3>
+    <h3><li>Product price : {{product.p_price}}</li></h3>
+    <form method="post"> 
+        {% csrf_token %} 
+       <input type="submit" class='btn btn-danger' value="Delete Record"> 
+       <a href="/api/{{product.id}}" class='btn btn-success'>Cancel</a> 
+</form> 
+</body>
+</html>

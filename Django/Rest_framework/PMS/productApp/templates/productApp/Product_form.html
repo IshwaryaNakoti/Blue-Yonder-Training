@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product_List</title>
+</head>
+<body>
+    <h1>Enter product details</h1><hr> 
+    <form method="post"> 
+        {{form.as_p}} 
+        {% csrf_token %} 
+    <input type="submit" class='btn btn-primary btn-lg' value="Save"> 
+    </form> 
+</body>
+</html>

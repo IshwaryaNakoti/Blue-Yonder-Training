@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product List</title>
+</head>
+<body>
+    <h1>Products List</h1>
+    {% for product in product_list %} 
+    <h2><li>id:  {{ product.id }}</li></h2> 
+    <h2><li>Product id:  {{ product.p_id }}</li></h2> 
+    <h2><li>Product name:  {{ product.p_name|upper }}</li></h2>  
+    <h2><li>Product price:  {{ product.p_price }}</li></h2>    
+    <h2>----------------------------------------</h2>
+{% endfor %} 
+</body>
+</html>
